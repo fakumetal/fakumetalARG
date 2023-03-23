@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Shantell+Sans:wght@300&family=Work+Sans:wght@200;300&display=swap");
+
+* {
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  background: rgb(30, 35, 35);
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.nav_bar {
+  font-size: 30px;
+  padding: 20px;
+  margin: 0 15px;
+}
+.nav_bar i {
+  color: rgb(230, 229, 229);
+  margin: 10px;
+  padding: 3px;
+}
+.nav_bar a {
+  color: rgb(230, 229, 229);
+  margin: 10px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.nav_bar a:hover {
+  color: #1cb698;
+  transform: scale(1.1);
+}
+.home {
+  height: 100vh;
+  background: rgb(255, 253, 240);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 253, 240, 1) 0%,
+    rgba(228, 255, 213, 1) 100%
+  );
+  display: flex;
+  border-bottom: solid 5px rgb(30, 35, 35);
+}
+.home:before {
+  content: "";
+  background-image: url(https://img.freepik.com/free-vector/watercolor-stains-abstract-background_23-2149107181.jpg?w=2000);
+  position: absolute;
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: 0px -300px;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.card_home {
+  background-color: rgb(30, 35, 35);
+  width: fit-content;
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+  z-index: 1;
+  border-radius: 20px;
+  display: flex;
+}
+
+.datos_personales {
+  border-top: solid 1px #1cb698;
+  background-color: rgb(30, 35, 35);
+  width: fit-content;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Shantell Sans";
+  color: rgb(230, 229, 229);
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-family: "Shantell Sans";
+  color: rgb(230, 229, 229);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  margin-top: 30px;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: rgb(230, 229, 229);
+}
+
+ul {
+  display: flex;
+  color: rgb(230, 229, 229);
+  font-size: 20px;
+  margin: 5px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border: solid 5px #1cb698;
+  border-radius: 1000px;
+  margin-top: 20px;
+}
+
+.icons {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.icons a {
+  color: #1cb698;
+}
+
+.perfil {
+  background: rgb(228, 255, 213);
+  background: linear-gradient(
+    0deg,
+    rgba(228, 255, 213, 1) 1%,
+    rgba(212, 214, 255, 1) 100%
+  );
+  border-bottom: solid 5px rgb(30, 35, 35);
+
+  padding: 110px;
+}
+
+.card_container {
+  background-color: rgb(30, 35, 35);
+  width: fit-content;
+  padding: 50px;
+  padding-top: 5px;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: rgb(230, 229, 229);
+}
+
+.skills {
+  background: rgb(30, 35, 35);
+  border-radius: 20px;
+  height: 380px;
+  padding: 40px;
+}
+
+.skills .skill .javascript {
+  width: 0%;
+  animation: 2s javascript forwards;
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+.skills .skill .html {
+  width: 0%;
+  animation: 2s html forwards;
+}
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.skills .skill .css {
+  width: 0%;
+  animation: 2s css forwards;
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+.skills .skill .comunicacion {
+  width: 0%;
+  animation: 2s comunicacion forwards;
+}
+
+@keyframes comunicacion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 91%;
+  }
+}
+
+.skills .skill .trabajo {
+  width: 0%;
+  animation: 2s trabajo forwards;
+}
+@keyframes trabajo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 83%;
+  }
+}
+
+.skills .skill > span {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: rgb(230, 229, 229);
+}
+.skills .skill .barra-skill {
+  height: 8px;
+  width: 80%;
+  background-color: rgb(230, 229, 229);
+  position: relative;
+  margin-bottom: 30px;
+  margin: auto;
+}
+.skills .skill .progreso {
+  background-color: #1cb698;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+}
+.skills .skill .barra-skill span {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #1cb698;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+
+.datos_personales {
+  border-top: solid 1px #1cb698;
+  background-color: rgb(30, 35, 35);
+  width: fit-content;
+  margin-top: 50px;
+  padding: 20px;
+}
+.formation {
+  background: rgb(228, 255, 213);
+  background: linear-gradient(
+    0deg,
+    rgba(228, 255, 213, 1) 1%,
+    rgba(212, 214, 255, 1) 100%
+  );
+
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 5px rgb(30, 35, 35);
+}
+
+.formacion {
+  border-left: solid 2px #1cb698;
+  border-bottom: solid 2px #1cb698;
+  padding: 50px;
+  margin: auto;
+  border-radius: 900px;
+  margin-bottom: 70px;
+}
+
+.formacion ul {
+  display: flex;
+  color: rgb(230, 229, 229);
+  font-size: 25px;
+  margin: 5px;
+}
+
+button {
+  border: none;
+  background: transparent;
+  font-family: "Shantell Sans";
+  color: #1cb698;
+  font-size: 30px;
+  cursor: pointer;
+}
+button :hover {
+  scale: 1.2;
+}
